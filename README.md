@@ -1,12 +1,30 @@
-# React + Vite
+# 📝Task Manager — React + Vite + Tailwind
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ -A clean, responsive Task Manager built with **React**, **Vite**, and **Tailwind CSS**.  
+ -Supports view filters (All / Active / Completed) via `react-router-dom`, persistent storage (localStorage).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Features
 
-## Expanding the ESLint configuration
+- Add, edit, and delete tasks
+- Mark tasks complete / incomplete (checkbox)
+- Filter views with routes: **All | Active | Completed**
+- Active route highlighting using `NavLink`
+- Persistent tasks using **localStorage**
+- Refresh button to clear all tasks (with confirmation)
+- Escape key cancels edit mode
+- Edit/Delete buttons disabled while editing (single-edit mode)
+- Responsive layout with Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+##  Tech Stack
+
+- React V19
+- Vite 
+- Tailwind CSS V4
+- react-router-dom
+- Browser `localStorage` for persistence
+
+---
