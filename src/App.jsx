@@ -92,13 +92,13 @@ function App() {
   return (
     <div className='flex justify-center bg-secondarybg text-white min-h-screen'>
 
-      <div className='maincontainer h-fit w-[98vw] max-w-[600px]  2xl:max-w-[800px] bg-primarybg my-4 p-8 rounded-xl'>
+      <div className='maincontainer h-fit w-[95vw] max-w-[600px]  2xl:max-w-[800px] bg-primarybg my-4 p-4 sm:p-6 md:p-8 rounded-xl'>
 
         {/* progress */}
-        <div className="p-4 border-2 border-solid border-purple rounded-xl flex justify-between items-center">
+        <div className="p-3 sm:p-4 border-2 border-solid border-purple rounded-xl flex justify-between items-center">
           <div className="details">
-            <h1 className='text-4xl'>Task Manager...</h1>
-            <p>Keep it up!</p>
+            <h1 className='text-4xl'>Focus Flow..</h1>
+            <p className='font-extralight'>Focus better Flow faster!</p>
           </div>
           <div>
             <button className='bg-purple text-white text-xl font-bold w-20 h-10 rounded-xl hover:bg-teal cursor-pointer' onClick={handlerefresh}>Refresh</button>
@@ -107,7 +107,7 @@ function App() {
 
 
         {/* form */}
-        <form className='w-full mt-8 flex gap-[2%] items-center'>
+        <form className='w-full my-8 flex gap-[2%] items-center'>
 
           <input type="text" placeholder="enter new task" className='w-full h-10 bg-secondarybg text-base rounded-[0.25rem] px-2 border-1 border-solid border-purple outline-none' ref={task} />
 
@@ -115,7 +115,7 @@ function App() {
         </form>
 
         {/* navbar */}
-        <div className="w-full mt-8 px-2 py-1 bg-secondarybg flex justify-between rounded-sm border-0 text-gray-400">
+        <div className="w-full px-2 py-1 bg-secondarybg flex justify-between rounded-sm border-0 text-gray-400">
           <NavLink to="/pending" className={({isActive})=>(isActive?"text-teal  rounded-sm":"")}> Active</NavLink>
           <NavLink to="/" className={({isActive})=>(isActive?"text-teal  rounded-sm":"")}> All tasks</NavLink>
           <NavLink to="/completed" className={({isActive})=>(isActive?"text-teal  rounded-sm":"")}> Completed</NavLink>
